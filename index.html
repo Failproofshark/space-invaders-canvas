@@ -1,0 +1,21 @@
+<html>
+    <head>
+        <title>Space Invaders</title>
+    </head>
+    <link href='http://fonts.googleapis.com/css?family=Audiowide' rel='stylesheet' type='text/css'>    
+    <style>
+        .canvas {
+            font-family: 'Audiowide', Arial, serif;
+            font-weight: 400;
+            border: 1px solid #000;
+            margin: 0 auto;
+        }
+    </style>
+    <body>
+        <!-- Two canvases are used for "double buffer" effect. Eliminates Flickering! -->
+        <canvas id="canvas1" class="canvas" width="640" height="700"></canvas>
+        <canvas id="canvas2" class="canvas" width="640" height="700" style="display:none"></canvas>
+        <script src="lib/lodash/dist/lodash.min.js"></script>
+        <script src="spaceinvaders.js"></script>
+    </body>
+</html>
